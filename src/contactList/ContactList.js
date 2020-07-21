@@ -15,7 +15,7 @@ class ContactList extends Component {
 
     return (
       <>
-        <h2 style={{ marginLeft: "30px", color: 'blue' }}>Contacts</h2>
+        <h2 style={{ marginLeft: "30px", color: "blue" }}>Contacts</h2>
         <FilterContacts filter={filter} onChange={onChange} />
         <ul>
           {contactList.map((contact) => (
@@ -28,7 +28,7 @@ class ContactList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  // console.log("state", state);
+  console.log("state", state);
   return {
     contactList: state.contactRoot.contactReducer.filter((contact) =>
       contact.name

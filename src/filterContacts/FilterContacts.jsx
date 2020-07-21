@@ -5,11 +5,16 @@ import contactsAction from "../redux/contacts/contactsAction";
 const FilterContacts = ({ filter, onChange }) => {
   return (
     <>
-      <h4 style={{ marginLeft: "30px", letterSpacing: "1px" }}>
+      <h4
+        style={{
+          marginLeft: "30px",
+          letterSpacing: "1px",
+        }}
+      >
         Find contacts by name:
       </h4>
       <input
-        style={{ marginLeft: "30px", height: "25px" }}
+        style={{ marginLeft: "30px", height: "25px", marginBottom: "10px" }}
         type="text"
         name="filter"
         value={filter}

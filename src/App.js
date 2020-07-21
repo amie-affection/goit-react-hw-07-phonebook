@@ -43,11 +43,11 @@ class App extends Component {
             marginTop: "20px",
             borderColor: "white",
             height: "35px",
-            width: '150px',
+            width: "150px",
             backgroundColor: "black",
             color: "white",
             fontWeight: "bold",
-            letterSpacing: '1px'
+            letterSpacing: "1px",
           }}
           onClick={this.props.toggleTheme}
         >
