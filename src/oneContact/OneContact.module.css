@@ -1,4 +1,12 @@
 .btnDelete {
-    margin-left: 10px;
-    margin-bottom: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-color: white;
+  height: 30px;
+  background-color: red;
+  color: white;
+}
+
+.oneContact {
+  margin-bottom: 5px;
 }

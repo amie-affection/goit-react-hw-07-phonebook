@@ -1,10 +1,18 @@
+.title {
+    color: blue;
+}
+
 .btn {
-    display: block;
-    margin-top: 15px;
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-color: white;
 }
 
 .inputName,
 .inputNumber {
     display: block;
     margin-bottom: 15px;
+    height: 30px;
 }

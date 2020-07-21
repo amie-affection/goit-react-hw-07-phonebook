@@ -6,7 +6,7 @@ const withTheme = (WrappedComponent) => {
     return (
       <ThemeContext.Consumer>
         {(context) => {
-          console.log(context);
+          // console.log(context);
           return (
             <WrappedComponent
               {...props}

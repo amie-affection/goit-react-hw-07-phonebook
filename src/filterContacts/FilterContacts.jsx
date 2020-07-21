@@ -3,12 +3,13 @@ import { connect } from "react-redux";
 import contactsAction from "../redux/contacts/contactsAction";
 
 const FilterContacts = ({ filter, onChange }) => {
-  console.log(filter);
   return (
     <>
-      <p style={{ marginLeft: "30px" }}>Find contacts by name</p>
+      <h4 style={{ marginLeft: "30px", letterSpacing: "1px" }}>
+        Find contacts by name:
+      </h4>
       <input
-        style={{ marginLeft: "30px" }}
+        style={{ marginLeft: "30px", height: "25px" }}
         type="text"
         name="filter"
         value={filter}
