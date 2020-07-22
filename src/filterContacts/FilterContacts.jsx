@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import contactsAction from "../redux/contacts/contactsAction";
+import { filterContact } from "../redux/contacts/contactSelectors";
 
 const FilterContacts = ({ filter, onChange }) => {
   return (
@@ -26,7 +27,7 @@ const FilterContacts = ({ filter, onChange }) => {
 
 const mapStateToProps = (state) => {
   return {
-    filter: state.contactRoot.filterReducer,
+    filter: filterContact(state),
   };
 };
 

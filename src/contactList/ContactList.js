@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import OneContact from "../oneContact/OneContact";
 import FilterContacts from "../filterContacts/FilterContacts";
 import contactsOperations from "../redux/contacts/contactsOperations";
+import { contactList } from "../redux/contacts/contactSelectors";
 
 class ContactList extends Component {
   componentDidMount() {
@@ -30,11 +31,7 @@ class ContactList extends Component {
 const mapStateToProps = (state) => {
   console.log("state", state);
   return {
-    contactList: state.contactRoot.contactReducer.filter((contact) =>
-      contact.name
-        .toLowerCase()
-        .includes(state.contactRoot.filterReducer.toLowerCase())
-    ),
+    contactList: contactList(state),
   };
 };
 
